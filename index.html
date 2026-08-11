@@ -9,42 +9,49 @@
 <body>
 
     <div class="container">
-        <!-- ÁREA DO CONVITE ABERTO (Fica atrás da capa) -->
-        <div class="invitation-open">
-            <img src="convite_aberto.png" alt="Convite Aberto Karen e Lorran" class="bg-open">
-            
-            <!-- Botões Interativos -->
-<div class="buttons-container">
-    <a href="#" target="_blank" class="btn-link">
-        <img src="images/botao-local.png" alt="Local da Cerimônia" class="btn-img">
-        <span class="btn-text">Local da<br>Cerimônia</span>
-    </a>
+        <!-- CONVITE ABERTO -->
+<div class="invitation-open">
+    <!-- Caminho corrigido para o arquivo PNG com underline -->
+    <img src="convite_aberto.png" alt="Convite Aberto" class="bg-open">
     
-    <a href="#" target="_blank" class="btn-link">
-        <img src="images/botao-lista.png" alt="Lista de Presentes" class="btn-img">
-        <span class="btn-text">Lista de<br>Presentes</span>
-    </a>
+    <!-- Botões Interativos -->
+    <div class="buttons-container">
+        <a href="SEU_LINK_AQUI" target="_blank" class="btn-link">
+            <div class="btn-icon-wrapper">
+                <!-- Removido o 'images/' -->
+                <img src="botao-local.png" alt="Local">
+            </div>
+            <span class="btn-text">LOCAL DA<br>CERIMÔNIA</span>
+        </a>
+        
+        <a href="SEU_LINK_AQUI" target="_blank" class="btn-link">
+            <div class="btn-icon-wrapper">
+                <!-- Removido o 'images/' -->
+                <img src="botao-lista.png" alt="Lista">
+            </div>
+            <span class="btn-text">LISTA DE<br>PRESENTES</span>
+        </a>
+    </div>
 </div>
 
-<!-- ÁREA DA CAPA (Dividida em duas portas) -->
+<!-- CAPA FECHADA (Frente) -->
 <div class="cover-wrapper" id="coverWrapper">
-    
-    <!-- Lado Esquerdo da Capa -->
     <div class="door door-left">
+        <!-- Removido o 'images/' -->
         <img src="capa-esquerda.png" alt="Capa Esquerda">
     </div>
     
-    <!-- Lado Direito da Capa -->
     <div class="door door-right">
+        <!-- Removido o 'images/' -->
         <img src="capa-direita.png" alt="Capa Direita">
     </div>
 
-    <!-- O Selo Clicável no Centro -->
+    <!-- Selo Clicável -->
     <div class="seal-container" id="sealBtn">
-        <img src="selo.png" alt="Selo de Cera K L" class="seal-img">
+        <!-- Removido o 'images/' -->
+        <img src="selo.png" alt="Selo de Cera" class="seal-img">
         <p class="seal-text">Clique para abrir</p>
     </div>
-
 </div>
 
     <script src="script.js"></script>
