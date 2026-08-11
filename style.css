@@ -41,43 +41,47 @@ body, html {
 /* --- Botões Interativos --- */
 .buttons-container {
     position: absolute;
-    top: 56%; /* Alteramos de 'bottom' para 'top' para alinhar logo abaixo do raminho */
+    top: 57%; 
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 40px; /* Espaço entre um botão e outro */
-    z-index: 2;
+    gap: 20px; /* Espaçamento entre os dois botões */
+    z-index: 5;
 }
 
-/* Transforma o link numa coluna para o texto ficar embaixo da imagem */
 .btn-link {
     text-decoration: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px; /* Espacinho entre o círculo e o texto */
+    gap: 5px;
 }
 
-/* Diminui o tamanho da bolinha */
-.btn-img {
-    width: 65px; /* Antes era 110px. Altere aqui se quiser maior ou menor */
-    height: auto;
-    transition: transform 0.2s ease;
+/* Este é o círculo verde */
+.btn-icon-wrapper {
+    width: 45px; /* Tamanho final do botão (bem menor) */
+    height: 45px;
+    background-color: #1a3629; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Estilo do textinho novo */
+/* Este é o ícone branco dentro do círculo */
+.btn-icon-wrapper img {
+    width: 22px; /* Ícone interno menor */
+    height: 22px;
+}
+
 .btn-text {
-    color: #1a3629; /* Cor verde escura do seu convite */
-    font-size: 12px;
+    color: #1a3629;
+    font-size: 9px; /* Texto pequeno e discreto */
+    font-weight: bold;
     text-align: center;
-    text-transform: uppercase; /* Deixa as letras maiúsculas */
-    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1.1;
 }
-
-.btn-link:hover .btn-img {
-    transform: scale(1.08);
-}
-
 /* Corta a imagem combinada para mostrar o botão esquerdo */
 .btn-img.left {
     object-fit: cover;
