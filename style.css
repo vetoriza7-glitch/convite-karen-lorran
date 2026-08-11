@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'FonteDoCasamento'; /* Fonte Pompiere-Regular */
+    src: url('Pompiere-Regular.ttf') format('truetype'); 
+}
+
 /* Configurações Básicas */
 body, html {
     margin: 0;
@@ -70,17 +75,18 @@ body, html {
 
 /* Este é o ícone branco dentro do círculo */
 .btn-icon-wrapper img {
-    width: 30px; /* Ícone interno menor */
-    height: 30px;
+    width: 45px; /* Ícone interno menor */
+    height: 45px;
 }
 
 .btn-text {
+    font-family: 'FonteDoCasamento', sans-serif; /* <-- Adicione esta linha aqui */
     color: #1a3629;
-    font-size: 9px; /* Texto pequeno e discreto */
+    font-size: 8px; /* Texto pequeno e discreto */
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    line-height: 1.1;
+    line-height: 1.2;
 }
 /* Corta a imagem combinada para mostrar o botão esquerdo */
 .btn-img.left {
