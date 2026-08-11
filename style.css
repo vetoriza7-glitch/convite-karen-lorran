@@ -38,31 +38,44 @@ body, html {
     object-fit: contain;
 }
 
-/* Área dos Botões Interativos */
+/* --- Botões Interativos --- */
 .buttons-container {
     position: absolute;
-    bottom: 8%; /* Ajuste a altura em relação à parte inferior da tela */
+    top: 56%; /* Alteramos de 'bottom' para 'top' para alinhar logo abaixo do raminho */
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 25px; /* Espaço entre os dois botões */
+    gap: 40px; /* Espaço entre um botão e outro */
     z-index: 2;
 }
 
+/* Transforma o link numa coluna para o texto ficar embaixo da imagem */
 .btn-link {
     text-decoration: none;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px; /* Espacinho entre o círculo e o texto */
 }
 
+/* Diminui o tamanho da bolinha */
 .btn-img {
-    width: 100px; /* Altere aqui para aumentar ou diminuir o tamanho dos botões */
+    width: 65px; /* Antes era 110px. Altere aqui se quiser maior ou menor */
     height: auto;
-    transition: transform 0.2s ease, filter 0.2s ease;
+    transition: transform 0.2s ease;
+}
+
+/* Estilo do textinho novo */
+.btn-text {
+    color: #1a3629; /* Cor verde escura do seu convite */
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase; /* Deixa as letras maiúsculas */
+    letter-spacing: 1px;
 }
 
 .btn-link:hover .btn-img {
-    transform: scale(1.08); /* Efeito suave de aumentar ao passar o mouse / tocar */
-    filter: brightness(1.1);
+    transform: scale(1.08);
 }
 
 /* Corta a imagem combinada para mostrar o botão esquerdo */
