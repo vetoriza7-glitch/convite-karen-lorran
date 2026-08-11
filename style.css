@@ -59,8 +59,8 @@ body, html {
 
 /* Este é o círculo verde */
 .btn-icon-wrapper {
-    width: 45px; /* Tamanho final do botão (bem menor) */
-    height: 45px;
+    width: 55px; /* Tamanho final do botão (bem menor) */
+    height: 55px;
     background-color: #1a3629; 
     border-radius: 50%;
     display: flex;
